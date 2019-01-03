@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="dialog_change_password_original_password_editText" type="id" />
+    <item name="dialog_change_password_new_password1" type="id" />
+    <item name="dialog_change_password_new_password2" type="id" />
+</resources>

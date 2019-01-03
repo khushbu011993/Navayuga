@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Student Attendance"
+        android:fontFamily="sans-serif_large"
+        android:textSize="25dp"
+        android:id="@+id/q"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="3"
+        android:layout_below="@id/q"
+        android:orientation="horizontal"
+        android:id="@+id/l"
+        android:paddingTop="20dp">
+
+        <Spinner
+            android:id="@+id/year"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+
+            >
+
+        </Spinner>
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/month">
+
+        </Spinner>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn"
+            android:text="Show"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/btnshow"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:weightSum="3"
+        android:layout_below="@id/l"
+        android:orientation="horizontal"
+        android:id="@+id/l1"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Day"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:background="@drawable/back"
+            android:textColor="@color/sysRed"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Date"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:background="@drawable/back"
+            android:textColor="@color/sysRed"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Status"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:background="@drawable/back"
+            android:textColor="@color/sysRed"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:layout_below="@id/l1"
+        android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        >
+
+
+         <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerview">
+        </android.support.v7.widget.RecyclerView>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:weightSum="15"
+        android:orientation="horizontal"
+        android:id="@+id/l3"
+        android:gravity="center"
+       >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Total "
+            android:gravity="center"
+            android:layout_weight="3"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="@drawable/back"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/totalday"
+            android:layout_weight="2"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Present"
+            android:gravity="center"
+            android:layout_weight="3"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:background="@drawable/back"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/totalpresent"
+            android:layout_weight="2"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text=" Absent"
+            android:gravity="center"
+            android:layout_weight="3"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:background="@drawable/back"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/totalabsent"
+            android:layout_weight="2"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/sysRed"
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
